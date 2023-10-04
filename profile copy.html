@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript</title>
+        <body>
+            <form>
+                <label for="nama">nama</label>
+                <input id="nama_txt" typpe="text" size="15" placeholder="input nama anda">
+                <br>
+                <label for="jk">jenis kelamin</label>
+                <input type="radio" value="laki-laki" name="jk">laki-laki
+                <input type="radio" value="perempuan" name="jk">perempuan
+
+                <input id="proses_btn" type="button" value="proses">
+            </form>
+            <script>
+                let nama_txt = document.querySelector("#nama_txt")
+                let proses_btn = document.querySelector("#proses_btn")
+
+                function cetak()
+                {
+                    var nama = nama.txt.value;
+                    let jk = document.querySelector("input[name='jk']:checked").value;
+                }
+            </script>
+        </body>
+    </head>
+</html>

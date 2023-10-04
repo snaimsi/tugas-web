@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Websiteku</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+</head>
+<body>
+    <div id="all">
+        <div class="container_flex" id="baris1">
+            <div>
+                <h1>Websiteku
+                    <a class="active" href="file:///C:/Users/snaim/OneDrive/Dokumen/WEB/TUGAS.html">Home</a>
+                    <a href="#About_Us">About Us</a>
+                    <a href="file:///C:/Users/snaim/OneDrive/Dokumen/WEB/profile.html">Profile</a>
+                </h1>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+
+        <div class="container_flex" id="baris2">
+            <div>
+                <h1>Isilah kuisioner dibawah ini!</h1>
+                <form><br>
+                    <p><label for="Nama">Nama :</label>
+                    <input id="Nama_txt" type="text" size="15">
+                    </p><br>
+
+                    <p>
+                    <label for="NRP/No.Reg">NRP/No.Reg :</label>
+                    <input id="NRP_txt" type="text" size="15">
+                    </p>
+
+                    <label for="jk">Jenis Kelamin</label>
+                    <input type="radio" value="laki-laki" name="jk">laki-laki
+                    <input type="radio" value="perempuan" name="jk">perempuan
+
+                    <br>
+                    <label for="Umur">Umur :</label>
+                    <input id="Umur_txt" type="text" size="15"><br>
+                    <br>
+                    <input id="proses_btn" type="button" value="Submit" onclick="cetak()">
+                </form>
+                <script>
+                    function cetak() {
+                        let Nama = document.querySelector("#Nama_txt").value;
+                        let Umur = document.querySelector("#Umur_txt").value;
+                        let NRP = document.querySelector("#NRP_txt").value;
+                        let jk = document.querySelector("input[name='jk']:checked");
+                        
+                        if (Nama && Umur && NRP && jk) {
+                            let hasilCetak = `Nama: ${Nama}\nUmur: ${Umur}\nNRP/No.Reg: ${NRP}\nJenis Kelamin: ${jk.value}`;
+                            alert(hasilCetak);
+                        } else {
+                            alert("Silakan lengkapi semua input dan pilih jenis kelamin.");
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="container_flex" id="baris3">
+            <div>
+                <footer>
+                    <h1>Halo ini merupakan akhir dari halaman pageku, terima kasih sudah datang! :D</h1>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

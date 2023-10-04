@@ -1,0 +1,8 @@
+*{box-sizing: border-box;padding: 0;margin: 0;}
+div#baris1{padding :20px; width: 100%;background-color: rgb(97, 68, 55);}
+div#baris2{color:black ;padding-bottom: 400px;text-align:center; width: 100%;background-color: rgb(222, 73, 73);}
+div#baris3{padding-top:20px;padding-bottom: 20px;width: 100%;background-color: rgb(125, 92, 77);}
+iframe{width: 500px;height: 550px;}
+a{font-size: 15px;}
+.topnav a {float: left;color: #f2f2f2; text-align: center;padding: 14px 16px;text-decoration: none;font-size: 17px;}
+.topnav .icon {display: none;}
